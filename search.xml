@@ -3,7 +3,7 @@
   <entry>
     <title>blog demo</title>
     <url>/2024/11/29/demo/</url>
-    <content><![CDATA[<p>&lt;font size&#x3D;10,color&#x3D;”0xff000000”&gt;test demo.</font></p>
+    <content><![CDATA[<p>test demo.</p>
 <h2 id="��ʼ"><a href="#��ʼ" class="headerlink" title="��ʼ"></a>��ʼ</h2><h3 id="include"><a href="#include" class="headerlink" title="include"></a>include</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#include &lt;main.h&gt;</span></span><br></pre></td></tr></table></figure>
 
 
