@@ -1,0 +1,40 @@
+
+.navbar {
+    z-index: 1020; /* 确保在内容之上 */
+}
+.product-section {
+    position: relative;
+	margin-top: 0px;
+    z-index: 1010; /* 在导航栏之下 */
+}
+
+/* CSS变量动态控制 */
+.product-section {
+    padding-top: calc(var(--nav-height) + 20px);
+}
+
+h1.display-4 {
+    scroll-margin-top: 100px; /* 现代浏览器支持 */
+    padding: 1rem 0;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-text-size {
+	font-size: 26px;
+	letter-spacing: 4px;
+}
+
+.team-section {
+    position: relative;
+	margin-top: 0px;
+    z-index: 1010; /* 在导航栏之下 */
+}
+
+
+.contact-section {
+    position: relative;
+	margin-top: 0px;
+    z-index: 1010; /* 在导航栏之下 */
+}

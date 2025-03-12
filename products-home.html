@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能产品中心 | 北方智能</title>
+    
+    <!-- 优化资源加载 -->
+    <link rel="preconnect" href="https://cdn.bootcdn.net">
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* 合并重复样式并优化 */
+        :root {
+            --nav-height: 80px;
+        }
+
+        .product-section {
+            padding-top: calc(var(--nav-height) + 2rem);
+            scroll-margin-top: var(--nav-height);
+        }
+
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .product-image {
+            border-radius: 12px;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --nav-height: 60px;
+            }
+        }
+
+        /* 移除未使用样式 */
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- 增强导航栏可访问性 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm" aria-label="主导航">
+        <div class="container">
+            <a class="navbar-brand" href="/" aria-label="返回首页">
+                <img src="img/公司logo.png" alt="北方智能 Logo" width="40" height="40"
+                    class="d-inline-block align-top me-2">
+                <span class="fw-bold text-primary">北方智能</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-expanded="false" aria-label="切换导航">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="products-home.html">产品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team-home.html">团队</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-home.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 产品展示优化 -->
+    <main class="flex-grow-1">
+        <section id="products" class="product-section py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 display-5 fw-bold">智能宠物护理解决方案</h1>
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <!-- 动态生成产品卡片 -->
+                    <div class="col">
+                        <article class="card h-100 border-0 shadow product-card">
+                            <div class="card-body p-4 text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-robot fs-1 text-primary" aria-hidden="true"></i>
+                                </div>
+                                <h2 class="h5 fw-bold mb-3">智能喂食器 Pro</h2>
+                                <a href="products.html" aria-label="查看智能喂食器详情">
+                                    <img src="img/宠物喂食器宣传照.webp" 
+                                         alt="智能喂食器工作场景图" 
+                                         class="img-fluid product-image mb-3"
+                                         loading="lazy">
+                                </a>
+                                <ul class="list-unstyled text-start small">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        智能防卡粮设计
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        APP远程控制
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        双电源供电系统
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pt-0">
+                                <a href="automatic-feeding.html" class="btn btn-outline-primary">
+                                    查看详情 <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- 重复更多产品卡片 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 增强页脚内容 -->
+    <footer class="footer mt-auto bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 text-center text-md-start">
+                    <h5 class="text-white mb-3">北方智能</h5>
+                    <p>致力于打造智能宠物护理生态系统</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="text-white mb-3">联系我们</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope me-2"></i>support@northai.com</li>
+                        <li class="mt-2"><i class="bi bi-telephone me-2"></i>400-800-1234</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h5 class="text-white mb-3">关注我们</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-wechat"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-weibo"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0 small">&copy; 2024 北方智能科技有限公司 保留所有权利 | <a href="#" class="text-white-50">隐私政策</a></p>
+        </div>
+    </footer>
+
+    <!-- 脚本优化 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 增强平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 返回顶部按钮优化
+        const backToTop = document.createElement('button');
+        backToTop.id = 'backToTop';
+        backToTop.className = 'btn btn-primary rounded-circle shadow';
+        backToTop.innerHTML = '<i class="bi bi-chevron-up"></i>';
+        backToTop.setAttribute('aria-label', '返回顶部');
+        document.body.appendChild(backToTop);
+
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

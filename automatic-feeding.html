@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北方智能 - 宠物自动喂食机</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入 Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+    <style>
+        /* 新增样式 */
+        :target::before {
+            content: "";
+            display: block;
+            height: 80px; 
+            margin: -80px 0 0;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+
+        .feature-list {
+            padding-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .comparison-table {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .product-section {
+                padding-top: 60px;
+            }
+            
+            .navbar-brand span {
+                font-size: 1.2rem;
+                letter-spacing: normal;
+            }
+        }
+		
+		/* 新增样式 */
+ 		.product-section {
+			padding-top: 60px; /* 根据导航栏高度调整 */
+			margin-top: 0px; /* 抵消锚点偏移 */
+		}
+
+		/* 锚点偏移补偿 */
+		:target::before {
+			content: "";
+			display: block;
+			height: 80px; 
+			margin-top: -80px;
+		}
+
+		@media (max-width: 992px) {
+			.product-section {
+				padding-top: 80px;
+				margin-top: -30px;
+			}
+		}
+		
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏优化 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/公司logo.png" alt="北方智能 Logo" width="40" height="40"
+                    class="d-inline-block align-top me-2">
+                <span class="fw-bold text-primary title-text-size" >北方智能</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products-home.html">产品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team-home.html">团队</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-home.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 产品详情优化 -->
+    <section id="products" class="product-section py-5">
+        <div class="container">
+			<!-- 添加空div作为间距补偿 -->
+			<div class="nav-spacer d-lg-none" style="height: 60px;"></div>
+            <h1 class="text-center mb-5 display-4 fw-bold pt-4">宠物自动喂食机</h1>
+            
+            <!-- 产品概览 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="img/宠物喂食器宣传照.webp" alt="产品主图" class="product-image">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">智能喂养解决方案</h2>
+                    <p class="lead">解放您的双手，为爱宠提供精准定时的健康饮食管理</p>
+                    <ul class="feature-list">
+                        <li>双模智能投喂系统</li>
+                        <li>三重防卡粮设计</li>
+                        <li>智能湿度监控</li>
+                        <li>APP远程控制</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 核心功能 -->
+            <div class="row my-5">
+                <div class="col-12">
+                    <h3 class="mb-4">核心功能</h3>
+                    
+                    <div class="row g-4">
+                        <!-- 功能1 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow">
+                                <img src="img/宠物喂食器宣传照1.webp" class="card-img-top" alt="APP界面">
+                                <div class="card-body">
+                                    <h5>智能定时投喂</h5>
+                                    <p>支持最多6次定时投喂，精确到分钟设置</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 功能2 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow">
+                                <img src="img/宠物喂食器宣传照2.webp" class="card-img-top" alt="出粮结构">
+                                <div class="card-body">
+                                    <h5>防卡粮设计</h5>
+                                    <p>螺旋推进结构+智能检测系统，卡粮率＜0.1%</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 功能3 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow">
+                                <img src="img/宠物喂食器宣传照3.webp" class="card-img-top" alt="储粮设计">
+                                <div class="card-body">
+                                    <h5>长效保鲜存储</h5>
+                                    <p>食品级密封容器+干燥剂仓，保鲜时长提升3倍</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 产品对比表格 -->
+            <div class="comparison-table my-5 p-3">
+                <h4 class="mb-3">产品优势对比</h4>
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>功能指标</th>
+                            <th>本产品</th>
+                            <th>竞品A</th>
+                            <th>竞品B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>出粮精度</td>
+                            <td>±2g</td>
+                            <td>±5g</td>
+                            <td>±8g</td>
+                        </tr>
+                        <tr>
+                            <td>卡粮率</td>
+                            <td>0.1%</td>
+                            <td>3.2%</td>
+                            <td>5.7%</td>
+                        </tr>
+                        <tr>
+                            <td>保鲜时长</td>
+                            <td>15天</td>
+                            <td>5天</td>
+                            <td>3天</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 用户评价 -->
+            <div class="testimonial-card">
+                <h4>用户评价</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <blockquote class="blockquote">
+                            <p>"出差神器！再也不用担心猫咪饿肚子，粮桶密封性超好"</p>
+                            <footer class="blockquote-footer">张女士，北京</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="blockquote">
+                            <p>"APP操作简单，家里老人也能轻松设置喂食时间"</p>
+                            <footer class="blockquote-footer">李先生，上海</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <p class="text-white mb-0">&copy; 2024 北方智能科技有限公司 保留所有权利</p>
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow" 
+            style="position: fixed; bottom: 20px; right: 20px; display: none;">
+        ↑
+    </button>
+    <script>
+        // 返回顶部功能
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('backToTop');
+            btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
