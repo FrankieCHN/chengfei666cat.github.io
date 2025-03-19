@@ -52,10 +52,10 @@
     <!-- 增强导航栏可访问性 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm" aria-label="主导航">
         <div class="container">
-            <a class="navbar-brand" href="/" aria-label="返回首页">
+            <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="img/公司logo.png" alt="北方智能 Logo" width="40" height="40"
                     class="d-inline-block align-top me-2">
-                <span class="fw-bold text-primary">北方智能</span>
+                <span class="fw-bold text-primary title-text-size">北方智能</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#navbarNav" aria-expanded="false" aria-label="切换导航">
@@ -83,8 +83,8 @@
     <!-- 产品展示优化 -->
     <main class="flex-grow-1">
         <section id="products" class="product-section py-5">
-            <div class="container">
-                <h1 class="text-center mb-5 display-5 fw-bold">智能宠物护理解决方案</h1>
+            <div class="container" style="padding-top: 48px;">
+                <h1 class="text-center mb-5 display-5 fw-bold">智能硬件以及工业自动化解决方案</h1>
                 <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
                     <!-- 动态生成产品卡片 -->
                     <div class="col">
@@ -93,10 +93,10 @@
 <!--                                 <div class="feature-icon mb-3">
                                     <i class="bi bi-robot fs-1 text-primary" aria-hidden="true"></i>
                                 </div>
- -->                                <h2 class="h5 fw-bold mb-3">智能喂食器</h2>
-                                <a href="products.html" aria-label="查看智能喂食器详情">
+ -->                                <h2 class="h5 fw-bold mb-3">宠物智能喂食机</h2>
+                                <a href="automatic-feeding.html" aria-label="查看宠物智能喂食机详情">
                                     <img src="img/宠物喂食器宣传照.webp" 
-                                         alt="智能喂食器工作场景图" 
+                                         alt="宠物喂食器宣传照" 
                                          class="img-fluid product-image mb-3"
                                          loading="lazy">
                                 </a>
@@ -123,6 +123,38 @@
                         </article>
                     </div>
                     <!-- 重复更多产品卡片 -->
+                    <div class="col">
+                        <article class="card h-100 border-0 shadow product-card">
+                            <div class="card-body p-4 text-center">
+                                <h2 class="h5 fw-bold mb-3">电动汽车随车充</h2>
+                                <a href="car-charger.html" aria-label="查看电动汽车随车充详情">
+                                    <img src="img/汽车随车充.webp" 
+                                         alt="汽车随车充" 
+                                         class="img-fluid product-image mb-3"
+                                         loading="lazy">
+                                </a>
+                                <ul class="list-unstyled text-start small">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        自定义启动充电
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        自定义结束充电
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check2-circle text-success me-2"></i>
+                                        APP控制
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pt-0">
+                                <a href="car-charger.html" class="btn btn-outline-primary">
+                                    查看详情 <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,7 +171,7 @@
                 <div class="col-md-4 text-center">
                     <h5 class="text-white mb-3">联系我们</h5>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-envelope me-2"></i>support@northai.com</li>
+                        <li><i class="bi bi-envelope me-2"></i>northintellitech@163.com</li>
                         <li class="mt-2"><i class="bi bi-telephone me-2"></i>400-800-1234</li>
                     </ul>
                 </div>
@@ -153,7 +185,7 @@
                 </div>
             </div>
             <hr class="my-4">
-            <p class="text-center mb-0 small">&copy; 2024 北方智能科技有限公司 保留所有权利 | <a href="#" class="text-white-50">隐私政策</a></p>
+            <p class="text-center mb-0 small">&copy; 2024 北方智能科技有限公司 保留所有权利 | <a href="PrivacyPolicy.html" class="text-white-50">隐私政策</a></p>
         </div>
     </footer>
 
