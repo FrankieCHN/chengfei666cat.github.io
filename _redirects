@@ -1,7 +1,7 @@
-/products-home   /products-home.html   301  # 将 /page 重定向到 /page.html（永久重定向）
-/team-home  /team-home.html  301
-/contact-home  /contact-home.html  301
-/PrivacyPolicy  /PrivacyPolicy.html  301
-/automatic-feeding  /automatic-feeding.html  301
-/car-charger  /car-charger.html  301
+/products-home /products-home.html 301
+/team-home /team-home.html 301
+/contact-home /contact-home.html 301
+/PrivacyPolicy /PrivacyPolicy.html 301
+/automatic-feeding /automatic-feeding.html 301
+/car-charger /car-charger.html 301
 
