@@ -1,0 +1,2 @@
+/page   /page.html   301  # 将 /page 重定向到 /page.html（永久重定向）
+/about  /about.html  301
