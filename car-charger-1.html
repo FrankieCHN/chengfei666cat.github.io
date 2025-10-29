@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北方智能 - 电动汽车随车充</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入 Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+    <style>
+        /* 新增样式 */
+        :target::before {
+            content: "";
+            display: block;
+            height: 80px; 
+            margin: -80px 0 0;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+
+        .feature-list {
+            padding-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .comparison-table {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .product-section {
+                padding-top: 60px;
+            }
+            
+            .navbar-brand span {
+                font-size: 1.2rem;
+                letter-spacing: normal;
+            }
+        }
+		
+		/* 新增样式 */
+ 		.product-section {
+			padding-top: 60px; /* 根据导航栏高度调整 */
+			margin-top: 0px; /* 抵消锚点偏移 */
+		}
+
+		/* 锚点偏移补偿 */
+		:target::before {
+			content: "";
+			display: block;
+			height: 80px; 
+			margin-top: -80px;
+		}
+
+		@media (max-width: 992px) {
+			.product-section {
+				padding-top: 80px;
+				margin-top: -30px;
+			}
+		}
+		
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏优化 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/公司logo.png" alt="北方智能 Logo" width="40" height="40"
+                    class="d-inline-block align-top me-2">
+                <span class="fw-bold text-primary title-text-size" >北方智能</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products-home.html">产品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team-home.html">团队</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-home.html">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 产品详情优化 -->
+    <section id="products" class="product-section py-5">
+        <div class="container">
+
+			<h1 class="text-center mb-5 display-4 fw-bold pt-4">电动汽车随车充</h1>
+            
+            <!-- 产品概览 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="img/汽车随车充.webp" alt="产品主图" class="product-image">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">电动汽车随车充电解决方案</h2>
+                    <p class="lead">解决家中、自驾游等无固定充电桩情况下车辆补能</p>
+                    <ul class="feature-list">
+                        <li>过压、过流等保护</li>
+                        <li>自定义开始充电</li>
+                        <li>自定义结束充电</li>
+                        <li>APP远程控制</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 核心功能 -->
+            <div class="row my-5">
+                <div class="col-12">
+                    <h3 class="mb-4">核心功能</h3>
+                    
+                    <div class="row g-4">
+                        <!-- 功能1 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow">
+                                <img src="img/car-charger-app.webp" class="card-img-top" alt="APP界面">
+                                <div class="card-body">
+                                    <h5>自定义充电</h5>
+                                    <p>支持预约时间充电，支持设置结束充电条件（电量，充电时长）</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 功能2 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow">
+                                <img src="img/car-charger-safety.webp" class="card-img-top" alt="安全防护">
+                                <div class="card-body">
+                                    <h5>多重保护设计</h5>
+                                    <p>过电压保护、过电流保护、过温保护、漏电流保护</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <footer class="footer mt-auto py-3 bg-dark text-white-50">
+        <div class="container text-center">
+            <p class="text-center mb-0 small">&copy; 2024 北方智能科技有限公司 保留所有权利 | <a href="PrivacyPolicy.html" class="text-white-50">隐私政策</a></p>
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow" 
+            style="position: fixed; bottom: 20px; right: 20px; display: none;">
+        ↑
+    </button>
+	
+    <script>
+        // 返回顶部功能
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('backToTop');
+            btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
